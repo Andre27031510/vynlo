@@ -1,7 +1,7 @@
 // src/App.tsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Navbar from './components/layout/Navbar';
 import Home from './pages/home/Home';
 import ProductList from './pages/products/list/ProductList';
 import CreateProduct from './pages/products/create/CreateProduct';
@@ -29,10 +29,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
-        <a
-          href="[invalid url, do not cite]
-          className="fixed bottom-4 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg"
-        >
+        <a href="#" className="fixed bottom-4 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg">
           Suporte WhatsApp
         </a>
       </div>
